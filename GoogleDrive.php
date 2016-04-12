@@ -1,20 +1,22 @@
 <?php
 /**
- * Intellectual Property of Philips N.V. All rights reserved.
+ * Intellectual Property of the Coding Company AB All rights reserved.
  * 
- * @copyright (c) 2015, Philips N.V.
- * @author V.A. (Victor) Angelier <victor.angelier@philips.com>
+ * @copyright (c) 2015, the Coding Company AB
+ * @author V.A. (Victor) Angelier <vangelier@hotmail.com>
  * @version 1.0
  * @license http://www.apache.org/licenses/GPL-compatibility.html GPL
+ * @package CodingCompany
  * 
  */
 
+namespace CodingCompany;
 
 /**
  * Description of GoogleDrive
  *
  * @author Victor Angelier <vangelier@hotmail.com>
- * @package HueLabs
+ * @package CodingCompany
  */
 class GoogleDrive
 {
@@ -252,6 +254,7 @@ class GoogleDrive
                 $batch->add($request, 'user');
 
                 //Create domain permissions
+                //@todo implement this later
                 /*
                 $domainPermission = new Google_Service_Drive_Permission(array(
                     'type'              => 'domain',
